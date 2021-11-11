@@ -1,5 +1,12 @@
-const Home = () => {
-  return <div>hello world</div>;
-};
+import Layout from '../components/Layout'
+import Container from '../components/Container'
 
-export default Home;
+const Home = () => {
+  return (
+    <Layout>
+      <Container>hello there</Container>
+    </Layout>
+  )
+}
+
+export default Home
