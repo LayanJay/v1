@@ -1,20 +1,25 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  purge: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './modules/**/*.{js,ts,jsx,tsx}',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      inter: ['Inter', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
       mono: ['Roboto Mono', 'monospace'],
     },
     extend: {
       colors: {
         white: {
-          base: '#F1F1F1',
+          dark: '#8892B0',
+          base: '#CCD6F6',
         },
         primary: {
           dark: '#0A192F',
-          base: '#13374A',
-          light: '#0092A6',
+          base: '#112240',
+          light: '#00CECE',
         },
       },
     },

@@ -1,10 +1,10 @@
 import Layout from '../components/Layout'
-import Container from '../components/Container'
+import HeroSection from '../modules/HeroSection'
 
 const Home = () => {
   return (
     <Layout>
-      <Container>hello there</Container>
+      <HeroSection />
     </Layout>
   )
 }
