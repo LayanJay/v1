@@ -1,4 +1,4 @@
-import 'tailwindcss/tailwind.css'
+import '../styles/globals.css'
 import '@fontsource/poppins/200.css'
 import '@fontsource/poppins/300.css'
 import '@fontsource/poppins'
