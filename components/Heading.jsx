@@ -3,13 +3,14 @@ const Heading = ({
   children,
   margin = 'mb-3',
   isMono = false,
+  color = 'text-white-base',
 }) => {
   if (type === 'h1') {
     return (
       <h1
         className={`${
-          isMono ? 'font-mono text-primary-light' : 'font-inter text-white-base'
-        } font-semibold text-4xl sm:text-5xl md:text-7xl leading-snug ${margin}`}
+          isMono ? 'font-mono' : 'font-inter font-semibold'
+        } text-4xl sm:text-5xl md:text-7xl leading-snug ${margin} ${color}`}
       >
         {children}
       </h1>
@@ -18,8 +19,8 @@ const Heading = ({
     return (
       <h2
         className={`${
-          isMono ? 'font-mono text-primary-light' : 'font-inter'
-        } font-semibold text-2xl sm:text-3xl md:text-4xl ${margin}`}
+          isMono ? 'font-mono' : 'font-inter font-semibold'
+        } text-2xl sm:text-3xl md:text-4xl ${margin} ${color}`}
       >
         {children}
       </h2>
@@ -28,8 +29,8 @@ const Heading = ({
     return (
       <h3
         className={`${
-          isMono ? 'font-mono text-primary-light' : 'font-inter'
-        } font-semibold text-xl sm:text-2xl md:text-3xl ${margin}`}
+          isMono ? 'font-mono' : 'font-inter font-semibold'
+        } text-xl sm:text-2xl md:text-3xl ${margin} ${color}`}
       >
         {children}
       </h3>
@@ -38,8 +39,8 @@ const Heading = ({
     return (
       <h4
         className={`${
-          isMono ? 'font-mono text-primary-light' : 'font-inter'
-        } font-semibold text-lg sm:text-xl md:text-2xl ${margin}`}
+          isMono ? 'font-mono' : 'font-inter font-semibold'
+        } sm:text-lg ${margin} ${color}`}
       >
         {children}
       </h4>
