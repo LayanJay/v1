@@ -9,9 +9,10 @@ const LinkButton = ({
   margin = '',
 }) => {
   return (
-    <div onClick={onClick} className={`${margin}`}>
+    <div className={`${margin}`}>
       <Link href={href}>
         <a
+          onClick={onClick}
           className={`${padding} ${width} font-mono font-semibold text-sm sm:text-base text-primary-light ring-2 ring-primary-light hover:bg-primary-light hover:bg-opacity-20 rounded-sm shadow-md transition ease-in`}
         >
           {children}
