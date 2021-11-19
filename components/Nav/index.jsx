@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { useState } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import ButtonLink from '../Link'
@@ -25,9 +24,17 @@ const Nav = () => {
   }
   return (
     <>
-      <nav className='sticky top-0 flex items-center justify-between bg-primary-dark font-poppins text-white-base p-4 sm:p-6 md:px-10'>
+      <nav className='sticky top-0 z-50 flex items-center justify-between bg-primary-dark font-poppins text-white-base p-4 sm:p-6 md:px-10'>
         <div className='w-16 sm:w-20 md:w-24'>
-          <Link href='/'>
+          <ScrollLink
+            className='cursor-pointer'
+            to='home'
+            smooth
+            duration={500}
+            offset={-100}
+            isDynamic
+            onClick={handleLink}
+          >
             <a>
               <Image
                 src='/brand_assets/logo-v1.svg'
@@ -37,7 +44,7 @@ const Nav = () => {
                 height={72}
               />
             </a>
-          </Link>
+          </ScrollLink>
         </div>
         <div>
           <ul className='flex space-x-14'>
