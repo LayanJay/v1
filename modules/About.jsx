@@ -53,7 +53,7 @@ const About = () => {
             </p>
             <MyStack />
           </div>
-          <div className='w-64 sm:w-80 mx-auto'>
+          <div className='transform hover:-translate-y-2 transition ease-in w-64 sm:w-80 mx-auto'>
             <Image
               className='rounded-lg shadow-md z-0'
               src='/profile_photo.png'
