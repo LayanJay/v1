@@ -55,7 +55,7 @@ const About = () => {
           </div>
           <div className='w-64 sm:w-80 mx-auto'>
             <Image
-              className='rounded-lg shadow-md'
+              className='rounded-lg shadow-md z-0'
               src='/profile_photo.png'
               alt='A photo of me'
               width={450}

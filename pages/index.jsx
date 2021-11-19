@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import About from '../modules/About'
+import Featured from '../modules/Featured'
 import HeroSection from '../modules/HeroSection'
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <Layout title='Layan Jayasinghe'>
       <HeroSection />
       <About />
+      <Featured />
     </Layout>
   )
 }

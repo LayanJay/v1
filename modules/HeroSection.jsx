@@ -5,7 +5,11 @@ import LinkButton from '../components/Link'
 const HeroSection = () => {
   return (
     <Container>
-      <div style={{ minHeight: '90vh' }} className='flex items-center'>
+      <div
+        id='home'
+        style={{ minHeight: '90vh' }}
+        className='flex items-center'
+      >
         <div>
           <Heading isMono type='h4' color='text-primary-light'>
             Hi there, I am

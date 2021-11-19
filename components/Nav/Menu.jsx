@@ -4,7 +4,7 @@ import ButtonLink from '../Link'
 const Menu = ({ isOpen, linkHandler }) => {
   return (
     <div
-      className={`fixed z-20 right-0 backdrop-filter transform ${
+      className={`fixed z-50 right-0 backdrop-filter transform ${
         isOpen ? 'left-0 h-full w-full backdrop-blur-sm' : 'backdrop-blur-none'
       } transition-all duration-200 ease-in`}
     >
