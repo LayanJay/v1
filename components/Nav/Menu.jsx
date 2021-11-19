@@ -54,7 +54,9 @@ const Menu = ({ isOpen, linkHandler }) => {
             </ScrollLink>
           </li>
           <li className='flex justify-start'>
-            <ButtonLink onClick={linkHandler}>Resume</ButtonLink>
+            <ButtonLink href='/' onClick={linkHandler}>
+              Resume
+            </ButtonLink>
           </li>
         </ul>
       </div>

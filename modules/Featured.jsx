@@ -2,9 +2,8 @@ import Container from '../components/Container'
 import FeaturedProjectCard from '../components/FeaturedProjectCard'
 import Heading from '../components/Heading'
 import Line from '../components/Line'
-import { featuredProjects } from '../lib/data'
 
-const Featured = () => {
+const Featured = ({ projects }) => {
   return (
     <Container>
       <section
@@ -25,8 +24,8 @@ const Featured = () => {
           <Line lineStyles='hidden md:block' />
         </div>
         <div className='flex flex-col space-y-20 sm:space-y-24'>
-          {featuredProjects &&
-            featuredProjects.map((project, i) => (
+          {projects &&
+            projects.map((project, i) => (
               <FeaturedProjectCard
                 key={project.title}
                 contentSide={i % 2 === 0 ? 'right' : 'left'}

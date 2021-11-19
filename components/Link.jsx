@@ -13,7 +13,7 @@ const LinkButton = ({
       <Link href={href}>
         <a
           onClick={onClick}
-          className={`${padding} ${width} font-mono text-sm sm:text-base text-primary-light ring-1 ring-primary-light hover:bg-primary-light hover:bg-opacity-20 rounded-sm shadow-md transition ease-in`}
+          className={`${padding} ${width} font-mono text-sm text-primary-light ring-1 ring-primary-light hover:bg-primary-light hover:bg-opacity-20 rounded-sm shadow-md transition ease-in`}
         >
           {children}
         </a>

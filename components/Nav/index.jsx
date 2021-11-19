@@ -35,15 +35,13 @@ const Nav = () => {
             isDynamic
             onClick={handleLink}
           >
-            <a>
-              <Image
-                src='/brand_assets/logo-v1.svg'
-                alt='brand logo'
-                layout='intrinsic'
-                width={165}
-                height={72}
-              />
-            </a>
+            <Image
+              src='/brand_assets/logo-v1.svg'
+              alt='brand logo'
+              layout='intrinsic'
+              width={165}
+              height={72}
+            />
           </ScrollLink>
         </div>
         <div>
@@ -85,7 +83,7 @@ const Nav = () => {
               </ScrollLink>
             </li>
             <li className='hidden md:block'>
-              <ButtonLink>Resume</ButtonLink>
+              <ButtonLink href='/'>Resume</ButtonLink>
             </li>
             <li className='block md:hidden'>
               <Hamburger
