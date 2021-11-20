@@ -1,10 +1,28 @@
 import Image from 'next/image'
+import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import Container from '../components/Container'
 import Heading from '../components/Heading'
 import Line from '../components/Line'
 import MyStack from '../components/MyStack'
+import { useEffect } from 'react'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const About = () => {
+  useEffect(() => {
+    gsap.from('#about', {
+      scrollTrigger: {
+        trigger: '#about',
+        start: 'top 80%',
+      },
+      opacity: 0,
+      y: 40,
+      ease: 'power3.out',
+      duration: 1,
+      delay: 0.3,
+    })
+  }, [])
   return (
     <Container>
       <section

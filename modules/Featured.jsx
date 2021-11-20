@@ -1,9 +1,27 @@
+import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import { useEffect } from 'react'
 import Container from '../components/Container'
 import FeaturedProjectCard from '../components/FeaturedProjectCard'
 import Heading from '../components/Heading'
 import Line from '../components/Line'
 
+gsap.registerPlugin(ScrollTrigger)
+
 const Featured = ({ projects }) => {
+  useEffect(() => {
+    gsap.from('#work', {
+      scrollTrigger: {
+        trigger: '#work',
+        start: 'top 80%',
+      },
+      opacity: 0,
+      y: 40,
+      ease: 'power3.out',
+      duration: 1,
+      delay: 0.3,
+    })
+  }, [])
   return (
     <Container>
       <section

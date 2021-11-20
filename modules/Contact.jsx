@@ -1,7 +1,25 @@
+import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import { useEffect } from 'react'
 import Container from '../components/Container'
 import Heading from '../components/Heading'
 
+gsap.registerPlugin(ScrollTrigger)
+
 const Contact = () => {
+  useEffect(() => {
+    gsap.from('#contact', {
+      scrollTrigger: {
+        trigger: '#contact',
+        start: 'top 80%',
+      },
+      opacity: 0,
+      y: 40,
+      ease: 'power3.out',
+      duration: 1,
+      delay: 0.3,
+    })
+  }, [])
   return (
     <Container>
       <section

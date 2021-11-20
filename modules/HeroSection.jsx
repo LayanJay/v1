@@ -1,8 +1,19 @@
+import { useEffect } from 'react'
+import { gsap } from 'gsap'
 import Container from '../components/Container'
 import Heading from '../components/Heading'
 import LinkButton from '../components/Link'
 
 const HeroSection = () => {
+  useEffect(() => {
+    gsap.from('#home', {
+      opacity: 0,
+      y: 40,
+      ease: 'power3.out',
+      duration: 1,
+      delay: 0.3,
+    })
+  }, [])
   return (
     <Container>
       <div
@@ -25,6 +36,7 @@ const HeroSection = () => {
             backend development) with UI/UX designing skills. Currently
             I&lsquo;m based on Colombo, Sri Lanka.
           </p>
+
           <LinkButton href='/' padding='py-3 px-8 sm:py-4 sm:px-12'>
             Resume
           </LinkButton>

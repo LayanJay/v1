@@ -3,7 +3,7 @@ import Heading from './Heading'
 
 const OtherProjectCard = ({ title, description, stack, url, github }) => {
   return (
-    <div className='bg-primary-base rounded-lg shadow-lg transform hover:-translate-y-2 transition ease-in p-4 sm:px-6 sm:py-5 md:px-8 md:py-6 max-w-xl'>
+    <section className='bg-primary-base rounded-lg shadow-lg transform hover:-translate-y-2 transition ease-in p-4 sm:px-6 sm:py-5 md:px-8 md:py-6 max-w-xl'>
       <div className='flex items-center justify-between mb-3'>
         <div className='mt-3'>
           <Heading
@@ -55,7 +55,7 @@ const OtherProjectCard = ({ title, description, stack, url, github }) => {
       >
         {stack && stack.map((item) => <p key={item}>{item}</p>)}
       </div>
-    </div>
+    </section>
   )
 }
 
