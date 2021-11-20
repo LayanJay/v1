@@ -5,34 +5,28 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-          <meta name='description' content='' />
-          <meta name='image' content='/assets/logo.png' />
-          <meta property='og:title' content='Medway' />
-          <meta property='og:description' content='' />
-          <meta property='og:image' content='/assets/logo.png' />
-          <meta name='twitter:creator' content='' />
-          <meta name='twitter:title' content='Medway' />
-          <meta name='twitter:description' content='' />
-          <meta name='twitter:image' content='/assets/logo.png' />
+          <meta
+            name='description'
+            content='Layan Jayasinghe is a frontend developer who specializes in building (and occasionally designing) exceptional digital experiences.'
+          />
+          <meta name='image' content='/brand_assets/logo.png' />
+          <meta property='og:title' content='Layan Jayasinghe' />
+          <meta
+            property='og:description'
+            content='Layan Jayasinghe is a frontend developer who specializes in building (and occasionally designing) exceptional digital experiences.'
+          />
+          <meta property='og:image' content='/brand_assets/logo.png' />
+          <meta name='twitter:creator' content='__x__LEO__x__' />
+          <meta name='twitter:title' content='Layan Jayasinghe' />
+          <meta
+            name='twitter:description'
+            content='Layan Jayasinghe is a frontend developer who specializes in building (and occasionally designing) exceptional digital experiences.'
+          />
+          <meta name='twitter:image' content='/brand_assets/logo.png' />
 
-          <link
-            rel='apple-touch-icon'
-            sizes='180x180'
-            href='/favicons/apple-touch-icon.png'
-          />
-          <link
-            rel='icon'
-            type='image/png'
-            sizes='32x32'
-            href='/favicons/favicon-32x32.png'
-          />
-          <link
-            rel='icon'
-            type='image/png'
-            sizes='16x16'
-            href='/favicons/favicon-16x16.png'
-          />
-          <link rel='manifest' href='/favicons/site.webmanifest' />
+          <link rel='icon' type='image/svg+xml' href='/favicon/favicon.svg' />
+
+          <link rel='icon' type='image/png' href='/favicon/favicon.png' />
         </Head>
         <body>
           <Main />
