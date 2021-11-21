@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postbuild": "next-sitemap --config custom-next-sitemap.js"
   },
   "dependencies": {
     "@fontsource/poppins": "^4.5.0",
@@ -14,6 +15,7 @@
     "gray-matter": "^4.0.3",
     "gsap": "^3.8.0",
     "next": "12.0.3",
+    "next-sitemap": "^1.6.203",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
