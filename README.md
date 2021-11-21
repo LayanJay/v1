@@ -9,10 +9,10 @@ The first iteration of my personal portfolio. This is a [Next.js](https://nextjs
 ## Tech Stack
 
 - Reactjs (Nextjs)
-- TailwindCss
+- TailwindCSS
 - GSAP
 - Vercel
 
 ## Credits
 
-Design inspiration by ![Brittany Chiang](https://github.com/bchiang7)
+Design inspiration by [Brittany Chiang](https://github.com/bchiang7) (An experienced software engineer at Upstatement)
