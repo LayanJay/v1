@@ -39,9 +39,9 @@ const Featured = ({ projects }) => {
           >
             Projects I’ve contributed
           </Heading>
-          <Line lineStyles='hidden md:block' />
+          <Line width='md:w-32 lg:w-56' lineStyles='hidden md:block' />
         </div>
-        <div className='flex flex-col space-y-20 sm:space-y-24'>
+        <div className='flex flex-col'>
           {projects &&
             projects.map((project, i) => (
               <FeaturedProjectCard

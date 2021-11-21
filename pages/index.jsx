@@ -1,4 +1,5 @@
 import Layout from '../components/Layout'
+import Social from '../components/Social'
 import { getAllProjects } from '../lib/utils'
 import About from '../modules/About'
 import Contact from '../modules/Contact'
@@ -33,6 +34,7 @@ const Home = ({ allProjects }) => {
 
   return (
     <Layout title='Layan Jayasinghe'>
+      <Social />
       <HeroSection />
       <About />
       <Featured projects={featuredProjects} />

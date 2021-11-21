@@ -9,7 +9,7 @@ const Layout = ({ title, children }) => {
         <title>{title}</title>
       </Head>
       <Nav />
-      <main className='min-h-screen bg-primary-dark font-poppins text-white-base'>
+      <main className='relative min-h-screen bg-primary-dark font-poppins text-white-base'>
         {children}
       </main>
       <Footer />

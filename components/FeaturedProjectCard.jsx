@@ -15,7 +15,7 @@ const FeaturedProjectCard = ({
   contentSide = 'right',
 }) => {
   return (
-    <div className='relative flex items-center'>
+    <div className='relative flex items-center my-6 sm:my-8 md:my-16'>
       <div className={`grid grid-cols-1 grid-rows-1 md:grid-cols-2 gap-4`}>
         <div
           className={`relative col-span-1 ${

@@ -36,7 +36,7 @@ const About = () => {
           </Heading>
           <Line />
         </div>
-        <div className='grid grid-rows-1 grid-col-1 md:grid-cols-2 gap-8'>
+        <div className='grid grid-rows-1 grid-col-1 lg:grid-cols-2 gap-8'>
           <div>
             <p className='text-white-dark text-sm sm:text-base leading-6 sm:leading-7 mb-3'>
               Hello! I&lsquo;m Layan and I love to build things that live on the
