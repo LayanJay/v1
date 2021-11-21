@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { gsap } from 'gsap'
 import { Link as ScrollLink } from 'react-scroll'
-import ButtonLink from '../Link'
 import Hamburger from './Hamburger'
 import Menu from './Menu'
 
@@ -100,7 +99,14 @@ const Nav = () => {
               </ScrollLink>
             </li>
             <li className='hidden md:block'>
-              <ButtonLink href='/'>Resume</ButtonLink>
+              <a
+                href='/layan_resume.pdf'
+                rel='noopener noreferrer'
+                target='_blank'
+                className='font-mono text-sm text-primary-light ring-1 ring-primary-light hover:bg-primary-light hover:bg-opacity-20 rounded-sm shadow-md transition ease-in py-2 px-4'
+              >
+                Resume
+              </a>
             </li>
             <li className='block md:hidden'>
               <Hamburger

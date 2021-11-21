@@ -1,5 +1,4 @@
 import { Link as ScrollLink } from 'react-scroll'
-import ButtonLink from '../Link'
 
 const Menu = ({ isOpen, linkHandler }) => {
   return (
@@ -54,9 +53,14 @@ const Menu = ({ isOpen, linkHandler }) => {
             </ScrollLink>
           </li>
           <li className='flex justify-start'>
-            <ButtonLink href='/' onClick={linkHandler}>
+            <a
+              href='/layan_resume.pdf'
+              rel='noopener noreferrer'
+              target='_blank'
+              className='font-mono text-sm text-primary-light ring-1 ring-primary-light hover:bg-primary-light hover:bg-opacity-20 rounded-sm shadow-md transition ease-in py-2 px-4'
+            >
               Resume
-            </ButtonLink>
+            </a>
           </li>
         </ul>
       </div>

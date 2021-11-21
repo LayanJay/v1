@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { gsap } from 'gsap'
 import Container from '../components/Container'
 import Heading from '../components/Heading'
-import LinkButton from '../components/Link'
 
 const HeroSection = () => {
   useEffect(() => {
@@ -37,9 +36,14 @@ const HeroSection = () => {
             I&lsquo;m based in Colombo, Sri Lanka.
           </p>
 
-          <LinkButton href='/' padding='py-3 px-8 sm:py-4 sm:px-12'>
+          <a
+            href='/layan_resume.pdf'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='font-mono text-sm text-primary-light ring-1 ring-primary-light hover:bg-primary-light hover:bg-opacity-20 rounded-sm shadow-md transition ease-in mx-auto my-16 py-3 px-8 sm:py-4 sm:px-12'
+          >
             Resume
-          </LinkButton>
+          </a>
         </div>
       </div>
     </Container>
