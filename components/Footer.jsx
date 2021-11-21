@@ -11,7 +11,6 @@ const Footer = () => {
       scrollTrigger: {
         trigger: '#footerSocailItems',
         start: 'top 102%',
-        markers: true,
       },
       opacity: 0,
       y: -10,
