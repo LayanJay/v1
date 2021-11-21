@@ -33,8 +33,8 @@ const HeroSection = () => {
           </Heading>
           <p className='mb-14 sm:text-lg text-white-dark max-w-xl'>
             I&lsquo;m a professional front-end developer (and occasionally do
-            backend development) with UI/UX designing skills. Currently
-            I&lsquo;m based on Colombo, Sri Lanka.
+            backend development) with UI/UX designing skills. Currently,
+            I&lsquo;m based in Colombo, Sri Lanka.
           </p>
 
           <LinkButton href='/' padding='py-3 px-8 sm:py-4 sm:px-12'>
