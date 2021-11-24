@@ -6,6 +6,7 @@ import Heading from '../components/Heading'
 import Line from '../components/Line'
 import MyStack from '../components/MyStack'
 import { useEffect } from 'react'
+import useBlurImage from '../hooks/useBlurImage'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -79,6 +80,8 @@ const About = () => {
               width={450}
               height={450}
               layout='intrinsic'
+              placeholder='blur'
+              blurDataURL={useBlurImage(450, 450)}
             />
           </div>
         </div>

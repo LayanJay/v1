@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Heading from './Heading'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
+import useBlurImage from '../hooks/useBlurImage'
 
 const FeaturedProjectCard = ({
   title,
@@ -38,6 +39,8 @@ const FeaturedProjectCard = ({
               layout='intrinsic'
               width={imageWidth}
               height={imageHeight}
+              placeholder='blur'
+              blurDataURL={useBlurImage(imageWidth, imageHeight)}
             />
           </a>
         </div>
