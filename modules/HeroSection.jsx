@@ -27,13 +27,12 @@ const HeroSection = () => {
           <Heading type='h1' margin='mb-4 sm:mb-8'>
             Layan Jayasinghe.
           </Heading>
-          <Heading type='h2' margin='mb-5' color='text-white-dark'>
-            UI/UX Designer + Developer
+          <Heading type='h3' margin='mb-5' color='text-white-dark'>
+            Fullstack Developer & UI/UX Designer
           </Heading>
           <p className='mb-14 sm:text-lg text-white-dark max-w-xl'>
-            I&lsquo;m a professional front-end developer (and occasionally do
-            backend development) with UI/UX designing skills. Currently,
-            I&lsquo;m based in Colombo, Sri Lanka.
+            I&lsquo;m a professional Fullstack developer with UI/UX designing
+            skills. Currently, I&lsquo;m based in Colombo, Sri Lanka.
           </p>
 
           <a

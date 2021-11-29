@@ -37,10 +37,10 @@ const Contact = () => {
         >
           Get In Touch
         </Heading>
-        <p className='text-white-dark text-center mb-1'>
+        <p className='text-white-dark text-sm md:text-base text-center mb-1'>
           My inbox is always open.
         </p>
-        <p className='text-white-dark text-center max-w-lg mx-auto mb-1'>
+        <p className='text-white-dark text-sm md:text-base text-center max-w-lg mx-auto mb-1'>
           Whether you have something to talk about or just want to say hi, I’ll
           try my best to get back to you!
         </p>

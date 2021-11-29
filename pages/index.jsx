@@ -1,3 +1,4 @@
+import Email from '../components/Email'
 import Layout from '../components/Layout'
 import Social from '../components/Social'
 import { getAllProjects } from '../lib/utils'
@@ -35,6 +36,7 @@ const Home = ({ allProjects }) => {
   return (
     <Layout title='Layan Jayasinghe'>
       <Social />
+      <Email />
       <HeroSection />
       <About />
       <Featured projects={featuredProjects} />

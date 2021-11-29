@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <footer
       id='footer'
-      className='bg-primary-dark font-poppins text-white-base border-b-2 border-primary-light flex flex-col items-center py-8'
+      className='bg-primary-dark font-poppins text-white-base border-b-2 border-primary-light flex flex-col items-center py-8 px-3 sm:px-4'
     >
       <div
         id='footerSocailItems'
