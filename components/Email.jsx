@@ -5,9 +5,9 @@ const Email = () => {
   useEffect(() => {
     const tl = gsap.timeline({ delay: 0.6 })
 
-    tl.from('#sideEmail a', {
+    tl.from('#sideEmail', {
       opacity: 0,
-      y: -10,
+      y: -15,
       ease: 'expo.out',
       duration: 0.5,
     })
